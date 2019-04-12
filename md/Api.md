@@ -2,7 +2,7 @@
 
 
 
-#### 选择图片转换为base64:利用H5的bitmap控件
+* 选择图片转换为base64:利用H5的bitmap控件
 
 ```
 function GetBase64Code(path) //path绝对路径  
