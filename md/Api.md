@@ -30,8 +30,8 @@
 * object-fit 让大小不一的图片保持大小相同 相册，表情包;
 
 	```
+	
 	<img style="width:200px;height:200px;object-fit:cover" src="">
-
 
 	属性	描述
 	fill	默认值。整个对象将完全填充此框。 如果对象的高宽比不匹配其框的宽高比，那么该对象将被拉伸以适应。
