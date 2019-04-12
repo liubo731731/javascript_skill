@@ -4,28 +4,28 @@
 
 * 选择图片转换为base64:利用H5的bitmap控件
 
-	```
-	function GetBase64Code(path) //path绝对路径  
-	{  
-			var bitmap = new plus.nativeObj.Bitmap("test"); //test随便取  
-			// 从本地加载Bitmap图片  
-			bitmap.load(path,function(){  
-				var base64=bitmap.toBase64Data();  
-				var datastr=base64.split(',',3)  
-				if(datastr.length>1)  
-				{  
-				   pics.push(datastr[1]);  
-				}else  
-				{  
-				   pics.push(datastr[0]);  
-				}  
-				console.log('加载图片：'+base64);  
-			},function(e){  
-				console.log('加载图片失败：'+JSON.stringify(e));  
-			});  
-	}  
+```
+function GetBase64Code(path) //path绝对路径  
+{  
+		var bitmap = new plus.nativeObj.Bitmap("test"); //test随便取  
+		// 从本地加载Bitmap图片  
+		bitmap.load(path,function(){  
+			var base64=bitmap.toBase64Data();  
+			var datastr=base64.split(',',3)  
+			if(datastr.length>1)  
+			{  
+			   pics.push(datastr[1]);  
+			}else  
+			{  
+			   pics.push(datastr[0]);  
+			}  
+			console.log('加载图片：'+base64);  
+		},function(e){  
+			console.log('加载图片失败：'+JSON.stringify(e));  
+		});  
+}  
 
-	```
+```
 	
 * object-fit 让大小不一的图片保持大小相同 相册，表情包;
 
