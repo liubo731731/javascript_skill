@@ -42,3 +42,15 @@ scale-down	内容的尺寸就像是指定了none或contain，默认应用尺寸�
 
 
 ```	
+
+* 给类型原型增加方法,比如给数组增加chunk方法:数字分组
+
+```
+Array.prototype.chunk = function(n){
+for(var i = 0, temp = [], l = ~~this.length / n; temp.length < l; temp[i++] = this.splice(0, n));
+	return temp;
+};
+
+调用console.log(list.chunk(3));//3个一组组成新的数组,每组里面有3个元素
+
+```
