@@ -7,7 +7,7 @@
 	```
 	function GetBase64Code(path) //path绝对路径  
 	{  
-			var bitmap = new plus.nativeObj.Bitmap("test"); //test标识谁便取  
+			var bitmap = new plus.nativeObj.Bitmap("test"); //test随便取  
 			// 从本地加载Bitmap图片  
 			bitmap.load(path,function(){  
 				var base4=bitmap.toBase64Data();  
